@@ -1,3 +1,6 @@
+.main-container{
+    background-color: #FAF9F6;
+}
 .main-container > div{
     max-width: 1140px;
 }
