@@ -12,6 +12,7 @@ h1{
     color: #355266;
     line-height: 1.2em;
     margin: 0 0 20px 0 !important;
+    font-weight: 700 !important;
 }
 a.button {
     padding: 10px 20px;
