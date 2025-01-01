@@ -4,20 +4,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script><!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <!-- Lightbox2 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="main-container">
-        <div class="flex flex-col justify-center items-center m-auto h-screen">
-            <h1 class="">Under Maintenance</h1>
-            <div class="flex row items-center gap-8">
-                <a class="button" href="https://drive.google.com/file/d/1GyHuNgHrrESWbt6lm1YMTXfdZ5hupTWh/view?usp=sharing" target="_blank">Visit My Resume</a>
-                <div class="flex row gap-4">
-                    <a class="button-icon" href="mailto:jaymanbernal0@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-                    <a class="button-icon" href="tel:+639495923843" target="_blank"><i class="fa-solid fa-phone"></i></a>
+        <div class="banner relative flex flex-row justify-between items-center m-auto h-screen">
+            <div class="banner-col w-7/12 flex-col">
+                <h1 class="">Hi, I'm Jayman, a WordPress Developer</h1>
+                <p class="">Specializing in converting designs into functional WordPress websites and customizing plugins for unique functionality.</p>
+                <div class="flex gap-8 button-container">
+                    <a href="#works" class="button">View My Work</a>
+                    <a href="tel:+639495923843" class="button2">Contact Me</a>
                 </div>
+            </div>
+            <div class="banner-col w-4/12 flex row items-center gap-12">
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/bnanner%20image.webp" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div id="about-me" class="about-me flex flex-row justify-between items-center m-auto">
+            <div class="about-me-container ">
+                <h2>About Me</h2>
+                <p>With over 3 years of experience as a WordPress developer, I transform ideas into reality. From building websites using Elementor and other builders to optimizing performance and troubleshooting complex issues, I deliver tailored solutions for every project. My expertise lies in converting Figma and Adobe XD designs into live, functional websites.</p>
+            </div>
+        </div>
+        
+        <div id="skills" class="skills flex flex-row justify-between items-center m-auto">
+            <div class="skills flex flex-col w-full">
+                <h2>Skills</h2>
+                <div class="flex flex-row flex-wrap justify-between items-top m-auto w-full gap-4">
+                    <div class="skills-container w-full">
+                        <h4>Web Development</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-container">
+                                <div class="progress-bar" data-progress="90">
+                                    <h6>HTML</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-container">
+                                <div class="progress-bar" data-progress="90">
+                                    <h6>CSS</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-container">
+                                <div class="progress-bar" data-progress="80">
+                                    <h6>jQuery</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-container">
+                                <div class="progress-bar" data-progress="50">
+                                    <h6>PHP</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-container">
+                                <div class="progress-bar" data-progress="50">
+                                    <h6>JavaScript</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-container w-full">
+                        <h4>WordPress and Other Tools</h4>
+                        <div class="skills-wp flex flex-row flex-wrap">
+                            <p class="w-3/12 mb-1.5"><i class="fa-solid fa-circle-check"></i> Elementor Pro</p>
+                            <p class="w-3/12 mb-1.5"><i class="fa-solid fa-circle-check"></i> WPBakery</p>
+                            <p class="w-3/12 mb-1.5"><i class="fa-solid fa-circle-check"></i> Divi</p>
+                            <p class="w-3/12 mb-1.5"><i class="fa-solid fa-circle-check"></i> Beaver Builder</p>
+                            <p class="w-3/12 mb-1.5"><i class="fa-solid fa-circle-check"></i> Oxygen</p>
+                            <p class="w-3/12 mb-1.5"><i class="fa-solid fa-circle-check"></i> WooCommerce</p>
+                            <p class="w-3/12 mb-1.5"><i class="fa-solid fa-circle-check"></i> Plugin Configuration</p>
+                            <p class="w-3/12 mb-1.5"><i class="fa-solid fa-circle-check"></i> Basic SEO</p>
+                            <p class="w-3/12 mb-1.5"><i class="fa-solid fa-circle-check"></i> Site Optimization</p>
+                            <p class="w-3/12 mb-1.5"><i class="fa-solid fa-circle-check"></i> HubSpot</p>
+                            <p class="w-3/12 mb-1.5"><i class="fa-solid fa-circle-check"></i> Vev Builder</p>
+                            <p class="w-3/12 mb-1.5"><i class="fa-solid fa-circle-check"></i> Figma</p>
+                            <p class="w-3/12 mb-1.5"><i class="fa-solid fa-circle-check"></i> Adobe XD</p>
+                            <p class="w-3/12 mb-1.5"><i class="fa-solid fa-circle-check"></i> Photoshop</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Works" class="works flex flex-row flex-wrap justify-between items-center m-auto overflow-hidden">
+            <div class="works-headline w-full">
+                <h2>Projects</h2>
+                <p>Due to NDA agreements, I am unable to publicly showcase the sites and branding I've developed, but I can share insights into the skills, tools, and techniques used to bring each project to life.</p>
+            </div>
+            <div class="works-container flex flex-row w-full">
+                <div class="works-item works-item-1 flex flex-row">
+                    <div class="work-contents overflow-hidden">
+                    <h4>Budget Calculator</h4>
+                    <div class="work-tags">
+                        <span>WordPress</span>
+                        <Span>Elementor Pro</Span>
+                        <span>Cost Calculator Builder Plugin</span> 
+                        <span>jQuery</span>
+                    </div>
+                    <h5>Budget Calculator with Conditional Image Display</h5>
+                    <p>I developed a budget calculator that displays one of two images based on specific field results. If the final result is between 0.1 and 2, a negative image appears. If the result is 3 or higher, a positive image is shown. The image displayed is determined by the value of the last result field.</p>
+                    <p>Used the free version of the Cost Calculator Builder plugin to implement the functionality. Custom jQuery was added to handle the conditional logic, but compatibility issues caused the code to load before the plugin, preventing it from working correctly. I resolved this by using setInterval to delay the custom code, ensuring the plugin loads first and the feature functions as required by the client.</p>
+                    <div class="works-images relative">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Budget%20Calculator.webp" alt="Image 1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Less%20than%20value.webp" alt="Image 2">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/More%20than%20value.webp" alt="Image 3">
+                            </div>
+                            </div>
+                            <!-- Navigation buttons -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <!-- Pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="work-folded">
+                        <h2>Budget Calculator</h2>
+                    </div> -->
+                </div>
+                <div class="works-item works-item-2 flex flex-row">
+                    <!-- <div class="work-contents">
+                        <h4>Budget Calculator</h4>
+                        <div class="work-tags">
+                            <span>WordPress</span>
+                            <Span>Elementor Pro</Span>
+                            <span>Cost Calculator Builder Plugin</span> 
+                            <span>jQuery</span>
+                        </div>
+                        <h5>Budget Calculator with Conditional Image Display</h5>
+                        <p>I developed a budget calculator that displays one of two images based on specific field results. If the final result is between 0.1 and 2, a negative image appears. If the result is 3 or higher, a positive image is shown. The image displayed is determined by the value of the last result field.</p>
+                        <p>Used the free version of the Cost Calculator Builder plugin to implement the functionality. Custom jQuery was added to handle the conditional logic, but compatibility issues caused the code to load before the plugin, preventing it from working correctly. I resolved this by using setInterval to delay the custom code, ensuring the plugin loads first and the feature functions as required by the client.</p>
+                        <div class="works-images relative">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Budget%20Calculator.webp" alt="Image 1">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Less%20than%20value.webp" alt="Image 2">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/More%20than%20value.webp" alt="Image 3">
+                                </div>
+                                </div> -->
+                                <!-- Navigation buttons -->
+                                <!-- <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div> -->
+                                <!-- Pagination -->
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="work-folded">
+                        <h2>Project 2</h2>
+                    </div> -->
+                </div>
+            </div>
+            <!-- Lightbox Modal -->
+            <div class="lightbox-modal" id="lightbox-modal">
+                <span class="close-btn">&times;</span>
+                <img class="modal-content" id="modal-img">
             </div>
         </div>
     </div>
