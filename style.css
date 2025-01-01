@@ -1,18 +1,70 @@
 .main-container{
+    overflow: hidden;
+}
+.main-container{
     background-color: #FAF9F6;
 }
 .main-container > div{
     max-width: 1140px;
 }
+a{
+    font-family: Popins, sans-serif;
+}
+p{
+    font-family: Popins, sans-serif;
+    font-size: 18px;
+    color: #0b1215;
+    margin-bottom: 14px;
+}
+p:last-child{
+    margin-bottom: 0px;
+}
 h1, h2, h3, h4, h5, h6{
     font-family: Popins, sans-serif;
+    line-height: 1.2em;
 }
 h1{
     font-size: 60px !important;
     color: #355266;
-    line-height: 1.2em;
     margin: 0 0 20px 0 !important;
     font-weight: 700 !important;
+}
+h2{
+    font-size: 48px !important;
+    color: #355266;
+    margin: 0 0 20px 0 !important;
+    font-weight: 700 !important;
+}
+h4{
+    font-size: 28px !important;
+    color: #355266;
+    line-height: 1.2em;
+    margin: 0 0 10px 0 !important;
+    font-weight: 700 !important;
+}
+h5{
+    font-size: 18px !important;
+    color: #355266;
+    line-height: 1.2em;
+    margin: 0 0 0px 0 !important;
+    font-weight: 600 !important;
+}
+h6{
+    font-size: 16px !important;
+    color: #355266;
+    line-height: 1.2em;
+    margin: 0 0 0px 0 !important;
+    font-weight: 400 !important;
+}
+nav.menu div{
+    padding: 24px 30px;
+}
+nav.menu a{
+    font-size: 18px;
+    color: #7099A0;
+}
+.button-container{
+    margin-top: 50px;
 }
 a.button {
     padding: 10px 20px;
@@ -27,7 +79,258 @@ a.button:hover {
     border: 1px solid #355266;
     color: #355266;
 }
+a.button2 {
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #355266;
+    font-size: 18px;
+    border: 1px solid #355266;;
+}
+a.button2:hover {
+    background-color: #7099A0;
+    border: 1px solid #7099A0;
+    color: #ffffff;
+}
 a.button-icon {
     font-size: 18px;
     color: #7099A0;
+}
+.floating-element-1{
+    position: absolute;
+    top: 0;
+    left: -30px;
+    z-index:0;
+}
+
+.floating-element-2{
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+    z-index: 0;
+}
+.fe-square-l{
+    height: 150px;
+    width: 150px;
+    border: 3px solid #355266;
+    transform: rotate(10deg);
+}
+.fe-square-s{
+    height: 50px;
+    width: 50px;
+    border: 3px solid #7099A0;
+    transform: rotate(10deg) translate(0px, -50px);
+}
+.image-container{
+    transform: rotate(5deg);
+    border: 3px solid #355266;
+}
+.image-container img{
+    transform: rotate(-5deg);
+}
+.about-me-container {
+    padding: 30px;
+    background-color: #e5e7eb;
+    transform: rotate(-3deg);
+}
+
+div#about-me {
+    border: 3px solid #355266;
+    transform: rotate(3deg);
+    margin: 50px auto 100px auto;
+}
+.skills{
+    padding: 100px 0px;
+}
+.skills p i{
+    margin: 0 5px 0 0;
+    color: #355266;
+    font-size: 18px;
+}
+/* CSS Code */
+  .swiper-container {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+  }
+  .swiper-wrapper{
+    align-items: center;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .lb-close {
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 1050;
+  }
+  .lb-close:hover {
+    background: #333;
+  }
+/* Custom Swiper Navigation */
+.swiper-button-next, 
+.swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    background-color: #355266;  /* Button background color */
+    border-radius: 50%;  /* Makes it round */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Custom Arrows */
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+    font-size: 20px;
+    color: #e5e7eb;  /* Arrow color */
+}
+
+/* Adjust Arrow Icons */
+.swiper-button-prev::after {
+    content: '❮';  /* Left arrow */
+}
+
+.swiper-button-next::after {
+    content: '❯';  /* Right arrow */
+}
+
+/* Hover Effect */
+.swiper-button-next:hover, 
+.swiper-button-prev:hover {
+    background-color: #2b3f4f;  /* Darker shade on hover */
+}
+.swiper-pagination {
+    bottom: -24px !important;
+}
+
+span.swiper-pagination-bullet {
+    height: 5px;
+    width: 50px;
+    border-radius: 0;
+    margin: 0 !important;
+}
+.swiper-pagination-bullet{
+    background-color: #2b3f4f;
+}
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    height: auto;
+    background: #E5E7EB;
+    border-radius: 0px;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+
+  .progress-bar {
+    height: 100%;
+    width: 0;  /* Initial width (0 until in view) */
+    background: linear-gradient(90deg, #355266, #7099A0);
+    transition: width 1.5s ease-out;
+    padding: 5px 10px;
+  }
+  .progress-bar h6{
+    color: #FAF9F6 !important;
+  }
+
+  .lb-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 1051;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .lb-close:hover {
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+/* Works */
+.works-container{
+    padding: 100px 0;
+  
+}
+  .work-tags{
+    margin: 20px 0;
+}
+
+.work-tags span {
+    background-color: #7099A0;
+    border-radius: 30px;
+    padding: 5px 15px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+/* Modal */
+
+/* Lightbox Modal */
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #bbb;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.work-folded h2 {
+    writing-mode: vertical-rl;
+}
+
+.work-folded {
 }
