@@ -23,63 +23,67 @@
 <body>
     <div class="main-container">
         <div class="banner relative flex flex-row justify-between items-center m-auto h-screen">
-            <div class="banner-col w-7/12 flex-col">
+            <img class="absolute top-11 -left-20 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%201.svg" alt="">
+            <img class="absolute top-36 -right-20 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%202.svg" alt="">
+            <div class="banner-col w-7/12 flex-col z-5">
                 <h1 class="">Hi, I'm Jayman, a WordPress Developer</h1>
                 <p class="">Specializing in converting designs into functional WordPress websites and customizing plugins for unique functionality.</p>
                 <div class="flex gap-8 button-container">
-                    <a href="#works" class="button">View My Work</a>
+                    <a href="#Works" class="button anchor">View My Work</a>
                     <a href="tel:+639495923843" class="button2">Contact Me</a>
                 </div>
             </div>
-            <div class="banner-col w-4/12 flex row items-center gap-12">
+            <div class="banner-col w-4/12 flex row items-center gap-12 z-5">
                 <div class="image-container">
                     <img src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/bnanner%20image.webp" alt="">
                 </div>
             </div>
         </div>
         
-        <div id="about-me" class="about-me flex flex-row justify-between items-center m-auto">
-            <div class="about-me-container ">
+        <div id="about-me" class="about-me relative flex flex-row justify-between items-center m-auto">
+            <img class="absolute -top-20 -left-20 z-0 -rotate-6" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%202.svg" alt="">
+            <div class="about-me-container z-5">
                 <h2>About Me</h2>
                 <p>With over 3 years of experience as a WordPress developer, I transform ideas into reality. From building websites using Elementor and other builders to optimizing performance and troubleshooting complex issues, I deliver tailored solutions for every project. My expertise lies in converting Figma and Adobe XD designs into live, functional websites.</p>
             </div>
         </div>
         
-        <div id="skills" class="skills flex flex-row justify-between items-center m-auto">
-            <div class="skills flex flex-col w-full">
+        <div id="skills" class="skills relative flex flex-row justify-between items-center m-auto z-5">
+            <img class="absolute top-20 -right-20 -rotate-6 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%201.svg" alt="">
+            <div class="flex flex-col relative w-full z-5">
                 <h2>Skills</h2>
                 <div class="flex flex-row flex-wrap justify-between items-top m-auto w-full gap-4">
                     <div class="skills-container w-full">
                         <h3>Web Development</h3>
-                        <div class="progress-bar-container">
+                        <div class="progress-bar-container z-4">
                             <div class="progress-container">
                                 <div class="progress-bar" data-progress="90">
                                     <h6>HTML</h6>
                                 </div>
                             </div>
                         </div>
-                        <div class="progress-bar-container">
+                        <div class="progress-bar-container z-4">
                             <div class="progress-container">
                                 <div class="progress-bar" data-progress="90">
                                     <h6>CSS</h6>
                                 </div>
                             </div>
                         </div>
-                        <div class="progress-bar-container">
+                        <div class="progress-bar-container z-4">
                             <div class="progress-container">
                                 <div class="progress-bar" data-progress="80">
                                     <h6>jQuery</h6>
                                 </div>
                             </div>
                         </div>
-                        <div class="progress-bar-container">
+                        <div class="progress-bar-container z-4">
                             <div class="progress-container">
                                 <div class="progress-bar" data-progress="50">
                                     <h6>PHP</h6>
                                 </div>
                             </div>
                         </div>
-                        <div class="progress-bar-container">
+                        <div class="progress-bar-container z-4">
                             <div class="progress-container">
                                 <div class="progress-bar" data-progress="50">
                                     <h6>JavaScript</h6>
@@ -110,15 +114,17 @@
             </div>
         </div>
 
-        <div id="Works" class="works flex flex-row flex-wrap justify-between items-center m-auto overflow-hidden">
-            <div class="works-headline w-full">
-                <h2>Projects</h2>
+        <div id="Works" class="works flex relative flex-row flex-wrap justify-between items-center m-auto z-5">
+            <img class="absolute -top-20 -left-40 -rotate-6 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%201.svg" alt="">
+            <img class="absolute bottom-36 -right-20 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%204.svg" alt="">
+            <div class="works-headline w-full relative z-5">
+                <h2>My Works</h2>
                 <p>Due to NDA agreements, I am unable to publicly showcase the sites and branding I've developed, but I can share insights into the skills, tools, and techniques used to bring each project to life.</p>
             </div>
-            <div class="works-container flex flex-row w-full">
+            <div class="works-container flex flex-row w-full relative">
                 <div class="works-item works-item-1 flex flex-row">
                     <div class="work-contents overflow-hidden ">
-                        <h4>Budget Calculator</h4>
+                        <h2>Budget Calculator</h2>
                         <div class="work-tags">
                             <span>WordPress</span>
                             <Span>Elementor Pro</Span>
@@ -150,32 +156,32 @@
                         </div>
                     </div>
                     <div class="work-folded">
-                        <h2>Budget Calculator</h2>
+                        <h4>Budget Calculator</h4>
                     </div>
                 </div>
                 <div class="works-item works-item-2 flex flex-row">
                     <div class="work-contents">
-                        <h4>Budget Calculator</h4>
+                        <h2>Interactive Floor Plan Viewer</h2>
                         <div class="work-tags">
                             <span>WordPress</span>
                             <Span>Elementor Pro</Span>
-                            <span>Cost Calculator Builder Plugin</span> 
                             <span>jQuery</span>
                         </div>
-                        <h5>Budget Calculator with Conditional Image Display</h5>
-                        <p>I developed a budget calculator that displays one of two images based on specific field results. If the final result is between 0.1 and 2, a negative image appears. If the result is 3 or higher, a positive image is shown. The image displayed is determined by the value of the last result field.</p>
-                        <p>Used the free version of the Cost Calculator Builder plugin to implement the functionality. Custom jQuery was added to handle the conditional logic, but compatibility issues caused the code to load before the plugin, preventing it from working correctly. I resolved this by using setInterval to delay the custom code, ensuring the plugin loads first and the feature functions as required by the client.</p>
+                        <h5>Floor Plan Display with Accordion and Tab Navigation</h5>
+                        <p>Developed an interactive floor plan viewer to showcase various floor plans for different room variations. I used a tab element to organize room variations and integrated an accordion within each tab to display available floor plans.</p>
+                        <p>To enhance user experience, I added custom navigation buttons, allowing users to cycle through floor plans without manually clicking each tab. This streamlines navigation and improves accessibility.</p>
+                        <p>The project was built using Elementor Pro, leveraging its Flex container and accordion box features. I implemented custom jQuery to add "Next" and "Previous" buttons, enabling seamless browsing between floor plans as per the client’s requirements.</p>
                         <div class="works-images relative">
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Budget%20Calculator.webp" alt="Image 1">
+                                        <img src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Tab%20Swiper.webp" alt="Image 1">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Less%20than%20value.webp" alt="Image 2">
+                                        <img src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Tab%20Plans%20swiper.webp" alt="Image 2">
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/More%20than%20value.webp" alt="Image 3">
+                                        <img src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Tab%20Open%20Swiper%20.webp" alt="Image 3">
                                 </div>
                                 </div>
                                 <!-- Navigation buttons -->
@@ -187,7 +193,7 @@
                         </div>
                     </div>
                     <div class="work-folded">
-                        <h2>Project 2</h2>
+                        <h4>Interactive Floor Plan Viewer</h4>
                     </div>
                 </div>
             </div>

@@ -72,6 +72,9 @@ nav.menu a{
 .button-container{
     margin-top: 50px;
 }
+.button.anchor{
+    transition: .3s ease-in-out;
+}
 a.button {
     padding: 10px 20px;
     border-radius: 6px;
@@ -316,8 +319,11 @@ span.swiper-pagination-bullet {
 }
 
 /* Works */
-.works-container{
+.works{
     padding: 100px 0;
+}
+.works-container{
+    padding: 50px 0 100px 0;
   
 }
 .work-tags{
@@ -330,29 +336,37 @@ span.swiper-pagination-bullet {
     font-size: 14px;
     color: #FFFFFF;
 }
-.work-contents{
+.works-item .work-contents{
     overflow: hidden;
+    transition: 0.5s ease-in-out;
+    background-color: #FAF9F6;
 }
 .work-folded{
-    width: 80px;
-    background-color: #7099A0;
-    padding: 20px;
+    width: auto;
+    background: linear-gradient(30deg, #355266, #7099A0);
+    padding: 20px 10px;
     z-index: 20;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
-.work-folded h2 {
+.work-folded:hover{
+    background: linear-gradient(30deg, #7099A0, #355266);
+    transition: 0.5s ease-in-out;
+}
+.work-folded h4 {
     writing-mode: vertical-rl;
     color: #FAF9F6;
 }
 
 .works-item.active{
-    border: 2px solid #355266;
+    border: 5px solid #355266;
 }
 .works-item.active .work-folded{
-    background-color: #355266;
+    background: linear-gradient(30deg, #355266, #355266);
+    transition: 0.3s ease-in-out;
 }
 .works-item.active .work-contents{
-    padding: 20px;
+    padding: 30px;
     width: auto;
     display: block;
 }
@@ -361,9 +375,4 @@ span.swiper-pagination-bullet {
 }
 
 .work-folded {
-    transition: 0.3s ease-in-out;
-}
-
-.works-item .work-contents {
-    transition: 0.3s ease-in-out;
 }
