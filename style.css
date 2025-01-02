@@ -399,7 +399,11 @@ span.swiper-pagination-bullet {
 .contact-social-media i{
     color: #7099A0;
 }
-
+@media (max-width: 900px) {
+    .skills-wp p {
+        width: 33%;
+    }
+}
 @media (max-width: 767px){
     h1{
         font-size: 38px !important;
@@ -446,7 +450,7 @@ span.swiper-pagination-bullet {
         padding: 50px 0; 
     }
     .skills-wp p {
-        width: 100%;
+        width: 100% !important;
     }
     .works{
         padding: 50px 0;
