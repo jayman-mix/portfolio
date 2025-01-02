@@ -415,7 +415,7 @@ span.swiper-pagination-bullet {
         font-size: 20px !important;
     }
     .floating-img {
-        width: 85px;
+        width: 85px !important;
     }
     .main-container{
         padding: 0 20px;
@@ -432,7 +432,7 @@ span.swiper-pagination-bullet {
         margin: auto;
     }
     .button-container{
-        gap: 20px;
+        gap: 20px !important;
         flex-direction: column;
         margin-bottom: 50px;
     }
