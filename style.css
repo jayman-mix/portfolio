@@ -26,19 +26,19 @@ h1{
     font-size: 60px !important;
     color: #355266;
     margin: 0 0 20px 0;
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 h2{
     font-size: 48px !important;
     color: #355266;
     margin: 0 0 20px 0;
-    font-weight: 700;
+    font-weight: 700 !important;
 }
-h2{
+h3{
     font-size: 36px !important;
     color: #355266;
     margin: 0 0 20px 0;
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 h4{
     font-size: 28px !important;
@@ -52,14 +52,14 @@ h5{
     color: #355266;
     line-height: 1.2em;
     margin: 0 0 0px 0;
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 h6{
     font-size: 16px !important;
     color: #355266;
     line-height: 1.2em;
     margin: 0 0 0px 0;
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 nav.menu div{
     padding: 24px 30px;
