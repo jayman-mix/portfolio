@@ -35,6 +35,12 @@ h2{
     margin: 0 0 20px 0 !important;
     font-weight: 700 !important;
 }
+h2{
+    font-size: 36px !important;
+    color: #355266;
+    margin: 0 0 20px 0 !important;
+    font-weight: 700 !important;
+}
 h4{
     font-size: 28px !important;
     color: #355266;
@@ -269,25 +275,6 @@ span.swiper-pagination-bullet {
     background: rgba(0, 0, 0, 0.9);
   }
 
-/* Works */
-.works-container{
-    padding: 100px 0;
-  
-}
-  .work-tags{
-    margin: 20px 0;
-}
-
-.work-tags span {
-    background-color: #7099A0;
-    border-radius: 30px;
-    padding: 5px 15px;
-    font-size: 14px;
-    color: #FFFFFF;
-}
-
-/* Modal */
-
 /* Lightbox Modal */
 .lightbox-modal {
     display: none;
@@ -328,9 +315,55 @@ span.swiper-pagination-bullet {
     to { opacity: 1; }
 }
 
+/* Works */
+.works-container{
+    padding: 100px 0;
+  
+}
+.work-tags{
+    margin: 20px 0;
+}
+.work-tags span {
+    background-color: #7099A0;
+    border-radius: 30px;
+    padding: 5px 15px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.work-contents{
+    overflow: hidden;
+}
+.work-folded{
+    width: 80px;
+    background-color: #7099A0;
+    padding: 20px;
+    z-index: 20;
+    cursor: pointer;
+}
 .work-folded h2 {
     writing-mode: vertical-rl;
+    color: #FAF9F6;
+}
+
+.works-item.active{
+    border: 2px solid #355266;
+}
+.works-item.active .work-folded{
+    background-color: #355266;
+}
+.works-item.active .work-contents{
+    padding: 20px;
+    width: auto;
+    display: block;
+}
+.works-item .work-contents{
+    display: none;
 }
 
 .work-folded {
+    transition: 0.3s ease-in-out;
+}
+
+.works-item .work-contents {
+    transition: 0.3s ease-in-out;
 }
