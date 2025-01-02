@@ -22,18 +22,18 @@
 </head>
 <body>
     <div class="main-container">
-        <div class="banner relative flex flex-row justify-between items-center m-auto h-screen">
-            <img class="absolute top-11 -left-20 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%201.svg" alt="">
-            <img class="absolute top-36 -right-20 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%202.svg" alt="">
-            <div class="banner-col w-7/12 flex-col z-5">
-                <h1 class="">Hi, I'm Jayman, a WordPress Developer</h1>
-                <p class="">Specializing in converting designs into functional WordPress websites and customizing plugins for unique functionality.</p>
+        <div class="banner relative flex flex-row justify-between items-center m-auto">
+            <img class="floating-img absolute top-11 -left-20 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%201.svg" alt="">
+            <img class="floating-img absolute top-36 -right-20 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%202.svg" alt="">
+            <div class="banner-col relative w-7/12 flex-col z-5">
+                <h1>Hi, I'm Jayman, a WordPress Developer</h1>
+                <p>Specializing in converting designs into functional WordPress websites and customizing plugins for unique functionality.</p>
                 <div class="flex gap-8 button-container">
                     <a href="#Works" class="button anchor">View My Work</a>
                     <a href="tel:+639495923843" class="button2">Contact Me</a>
                 </div>
             </div>
-            <div class="banner-col w-4/12 flex row items-center gap-12 z-5">
+            <div class="banner-col relative w-4/12 flex row items-center gap-12 z-5">
                 <div class="image-container">
                     <img src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/bnanner%20image.webp" alt="">
                 </div>
@@ -41,7 +41,7 @@
         </div>
         
         <div id="about-me" class="about-me relative flex flex-row justify-between items-center m-auto">
-            <img class="absolute -top-20 -left-20 z-0 -rotate-6" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%202.svg" alt="">
+            <img class="floating-img absolute -top-20 -left-20 z-0 -rotate-6" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%202.svg" alt="">
             <div class="about-me-container z-5">
                 <h2>About Me</h2>
                 <p>With over 3 years of experience as a WordPress developer, I transform ideas into reality. From building websites using Elementor and other builders to optimizing performance and troubleshooting complex issues, I deliver tailored solutions for every project. My expertise lies in converting Figma and Adobe XD designs into live, functional websites.</p>
@@ -49,7 +49,7 @@
         </div>
         
         <div id="skills" class="skills relative flex flex-row justify-between items-center m-auto z-5">
-            <img class="absolute top-20 -right-20 -rotate-6 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%201.svg" alt="">
+            <img class="floating-img absolute top-20 -right-20 -rotate-6 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%201.svg" alt="">
             <div class="flex flex-col relative w-full z-5">
                 <h2>Skills</h2>
                 <div class="flex flex-row flex-wrap justify-between items-top m-auto w-full gap-4">
@@ -115,8 +115,8 @@
         </div>
 
         <div id="Works" class="works flex relative flex-row flex-wrap justify-between items-center m-auto z-5">
-            <img class="absolute -top-20 -left-40 -rotate-6 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%201.svg" alt="">
-            <img class="absolute bottom-36 -right-20 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%204.svg" alt="">
+            <img class="floating-img absolute -top-20 -left-40 -rotate-6 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%201.svg" alt="">
+            <img class="floating-img absolute bottom-36 -right-20 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%204.svg" alt="">
             <div class="works-headline w-full relative z-5">
                 <h2>My Works</h2>
                 <p>Due to NDA agreements, I am unable to publicly showcase the sites and branding I've developed, but I can share insights into the skills, tools, and techniques used to bring each project to life.</p>
@@ -203,123 +203,23 @@
                 <img class="modal-content" id="modal-img">
             </div>
         </div>
+        <div id="contact-me" class="contact-me relative flex flex-row justify-between items-center m-auto">
+            <img class="floating-img absolute -top-20 -left-40 -rotate-6 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%201.svg" alt="">
+            <img class="floating-img absolute bottom-36 -right-20 z-0" src="https://raw.githubusercontent.com/jayman-mix/portfolio/refs/heads/main/images/Float%20Element%204.svg" alt="">
+            <div class="contact-me-container z-5">
+                <div class="contact-me-col">
+                    <h2>Contact Me</h2>
+                    <div class="contact-social-media flex flex-row gap-4">
+                        <a href="mailto:jaymanbernal0@gmail.com"><i class="fa-solid fa-envelope text-2xl"></i></a>
+                        <a href="https://www.linkedin.com/in/jayman-bernal-web-dev/"><i class="fa-brands fa-linkedin-in text-2xl"></i></a>
+                        <a href="https://github.com/jayman-mix"><i class="fa-brands fa-github text-2xl"></i></a>
+                        <a href="https://www.facebook.com/jayman.bernal"><i class="fa-brands fa-facebook text-2xl"></i></a>
+                    </div>
+                    <h5>Let's Connect and Build Something Great!</h5>
+                    <p>I’m always open to new projects, collaborations, or just a friendly chat about web development. Feel free to reach out with me on social media.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <script>
-        // Swiper
-        document.addEventListener('DOMContentLoaded', function () {
-            var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 1,
-                spaceBetween: 10,
-                loop: false,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-            });
-        
-            // Lightbox Options
-            lightbox.option({
-                'alwaysShowNavOnTouchDevices': true,
-                'wrapAround': true,
-                'disableScrolling': true,
-                'showImageNumberLabel': false
-            });
-        });
-        
-        // Progress Bar Animation
-        document.addEventListener('DOMContentLoaded', function () {
-            const progressBars = document.querySelectorAll('.progress-bar');
-          
-            const observer = new IntersectionObserver((entries) => {
-              entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                  const progress = entry.target.getAttribute('data-progress');
-                  entry.target.style.width = `${progress}%`;
-                }
-              });
-            }, { threshold: 0.5 });
-          
-            progressBars.forEach(bar => {
-              observer.observe(bar);
-            });
-        });
-        
-        // Modal
-        document.addEventListener('DOMContentLoaded', function () {
-            var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 1,
-                spaceBetween: 10,
-                loop: false,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-            });
-        
-            const swiperSlides = document.querySelectorAll('.swiper-slide img');
-            const modal = document.getElementById('lightbox-modal');
-            const modalImg = document.getElementById('modal-img');
-            const closeModal = document.querySelector('.close-btn');
-        
-            swiperSlides.forEach(img => {
-                img.addEventListener('click', function () {
-                    modal.style.display = 'flex';
-                    modalImg.src = this.src;
-                });
-            });
-        
-            closeModal.addEventListener('click', function () {
-                modal.style.display = 'none';
-            });
-        
-            modal.addEventListener('click', function (e) {
-                if (e.target !== modalImg) {
-                    modal.style.display = 'none';
-                }
-            });
-        });
-        
-        // Smooth Scroll for Anchors
-        document.addEventListener('DOMContentLoaded', function () {
-            const anchors = document.querySelectorAll('.anchor');
-        
-            anchors.forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetID = this.getAttribute('href');
-                    const targetSection = document.querySelector(targetID);
-        
-                    if (targetSection) {
-                        window.scrollTo({
-                            top: targetSection.offsetTop,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-        });
-        
-        // jQuery Section Toggle
-        jQuery(document).ready(function ($) {
-            $('.works-item-1').addClass('active');
-            $('.works-item-2').click(function () {
-                $('.works-item-1').removeClass('active');
-                $('.works-item-2').addClass('active');
-            });
-            $('.works-item-1').click(function () {
-                $('.works-item-2').removeClass('active');
-                $('.works-item-1').addClass('active');
-            });
-        });
-        </script>
-        
 </body>
 </html>
