@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="190" viewBox="0 0 150 190">
+  <g id="Float_Element_4" data-name="Float Element 4" transform="translate(-81 -150)">
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(81 150)" fill="none" stroke="#355266" stroke-width="3">
+      <rect width="150" height="150" stroke="none"/>
+      <rect x="1.5" y="1.5" width="147" height="147" fill="none"/>
+    </g>
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(101 260)" fill="none" stroke="#7099a0" stroke-width="3">
+      <rect width="80" height="80" stroke="none"/>
+      <rect x="1.5" y="1.5" width="77" height="77" fill="none"/>
+    </g>
+  </g>
+</svg>
