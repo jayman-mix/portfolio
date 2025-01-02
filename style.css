@@ -1,8 +1,7 @@
 .main-container{
     overflow: hidden;
-}
-.main-container{
     background-color: #FAF9F6;
+    padding: 0 30px;
 }
 .main-container > div{
     max-width: 1140px;
@@ -12,7 +11,7 @@ a{
 }
 p{
     font-family: Popins, sans-serif;
-    font-size: 18px;
+    font-size: 18px !important;
     color: #0b1215;
     margin-bottom: 14px;
 }
@@ -26,41 +25,41 @@ h1, h2, h3, h4, h5, h6{
 h1{
     font-size: 60px !important;
     color: #355266;
-    margin: 0 0 20px 0 !important;
-    font-weight: 700 !important;
+    margin: 0 0 20px 0;
+    font-weight: 700;
 }
 h2{
     font-size: 48px !important;
     color: #355266;
-    margin: 0 0 20px 0 !important;
-    font-weight: 700 !important;
+    margin: 0 0 20px 0;
+    font-weight: 700;
 }
 h2{
     font-size: 36px !important;
     color: #355266;
-    margin: 0 0 20px 0 !important;
-    font-weight: 700 !important;
+    margin: 0 0 20px 0;
+    font-weight: 700;
 }
 h4{
     font-size: 28px !important;
     color: #355266;
     line-height: 1.2em;
-    margin: 0 0 10px 0 !important;
+    margin: 0 0 10px 0;
     font-weight: 700 !important;
 }
 h5{
     font-size: 18px !important;
     color: #355266;
     line-height: 1.2em;
-    margin: 0 0 0px 0 !important;
-    font-weight: 600 !important;
+    margin: 0 0 0px 0;
+    font-weight: 600;
 }
 h6{
     font-size: 16px !important;
     color: #355266;
     line-height: 1.2em;
-    margin: 0 0 0px 0 !important;
-    font-weight: 400 !important;
+    margin: 0 0 0px 0;
+    font-weight: 400;
 }
 nav.menu div{
     padding: 24px 30px;
@@ -130,6 +129,9 @@ a.button-icon {
     border: 3px solid #7099A0;
     transform: rotate(10deg) translate(0px, -50px);
 }
+.banner{
+    padding: 200px 0;
+}
 .image-container{
     transform: rotate(5deg);
     border: 3px solid #355266;
@@ -168,7 +170,7 @@ div#about-me {
   }
   .swiper-slide img {
     width: 100%;
-    height: 500px;
+    height: 400px;
     border-radius: 10px;
     object-fit: cover;
   }
@@ -375,4 +377,116 @@ span.swiper-pagination-bullet {
 }
 
 .work-folded {
+}
+
+/* Contact */
+.contact-me{
+    padding: 100px 0;
+}
+.contact-me-container{
+    border: 3px solid #355266;
+    transform: rotate(-3deg);
+    margin: 100px auto 100px auto;
+}
+.contact-me-col{
+    padding: 30px;
+    background-color: #e5e7eb;
+    transform: rotate(3deg);
+}
+.contact-social-media{
+    margin-bottom: 20px;
+}
+.contact-social-media i{
+    color: #7099A0;
+}
+
+@media (max-width: 767px){
+    h1{
+        font-size: 38px !important;
+        z-index: 50;
+    }
+    h2{
+        font-size: 30px !important;
+    }
+    h3{
+        font-size: 24px !important;
+    }
+    h4{
+        font-size: 20px !important;
+    }
+    .floating-img {
+        width: 85px;
+    }
+    .main-container{
+        padding: 0 20px;
+    }
+    .banner{
+        padding: 100px 0  50px 0;
+        flex-direction: column !important;
+    }
+    .banner-col {
+        width: 100% !important;
+    }
+    .image-container {
+        width: 70% !important;
+        margin: auto;
+    }
+    .button-container{
+        gap: 20px;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .button-container a{
+        text-align: center;
+    }
+    div#about-me{
+        margin: 50px 0;
+    }
+    .skills{
+        padding: 50px 0; 
+    }
+    .skills-wp p {
+        width: 100%;
+    }
+    .works{
+        padding: 50px 0;
+    }
+    .works-container {
+        flex-direction: column;
+        padding: 50px 0 0 0;
+    }
+    .works-item.active {
+        border: 3px solid #355266;
+        flex-direction: column;
+    }
+    .works-item {
+        width: 100%;
+        border: none;
+    }    
+    .work-folded{
+        padding: 10px 20px;
+        width: 100%;
+    }
+    .works-item.active .work-contents {
+        padding: 20px;
+    }
+    .work-folded h4 {
+        writing-mode:horizontal-tb;
+        margin: 0 !important;
+    }
+    .swiper-slide img {
+        height: 350px;
+    }
+    .contact-me{
+        padding: 50px 0;
+    }
+    .contact-me-container{
+        margin: 0;
+    }
+    .work-tags {
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
