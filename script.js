@@ -83,3 +83,35 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const anchors = document.querySelectorAll('.anchor');
+
+    anchors.forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetID = this.getAttribute('href');
+            const targetSection = document.querySelector(targetID);
+
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'  // Smooth scrolling effect
+                });
+            }
+        });
+    });
+});
+
+jQuery(document).ready(function ($) {
+    $('.works-item-1').addClass('active');
+    $('.works-item-2').click(function (){
+        $('.works-item-1').removeClass('active');
+        $('.works-item-2').addClass('active');
+    });
+    $('.works-item-1').click(function (){
+        $('.works-item-2').removeClass('active');
+        $('.works-item-1').addClass('active');
+    });
+});
+
