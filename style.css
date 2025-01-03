@@ -547,6 +547,9 @@ span.swiper-pagination-bullet {
     color:#355266;
 }
 @media (max-width: 1345px){
+    .menu{
+        transform: translateY(20px) !important;
+    }
     .menu ul {
         flex-direction: row !important;
     }
@@ -599,6 +602,7 @@ span.swiper-pagination-bullet {
     }
     .menu-contact:hover .menu-contact-icon {
         left: -73px;
+    }
 }
 @media (max-width: 345px){
     .socmed-menu{
