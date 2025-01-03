@@ -16,7 +16,7 @@ p{
     font-family: Popins, sans-serif;
     font-size: 18px !important;
     color: #0b1215;
-    margin-bottom: 14px;
+    margin-bottom: 14px !important;
 }
 p:last-child{
     margin-bottom: 0px;
