@@ -402,6 +402,210 @@ span.swiper-pagination-bullet {
 .contact-social-media i{
     color: #7099A0;
 }
+
+
+/* Menu */
+.anchors-menu li a i {
+    color: #ffffff;
+    font-size: 24px;
+}
+.socmed-menu i {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.menu {
+    width: fit-content;
+    background-color: #7099A0;
+    padding: 10px 10px 10px 5px;
+    border-radius: 5px;
+    position: fixed;
+    transform: translateY(100%);
+    z-index: 100000;
+}
+.menu ul {
+    flex-direction: column !important;
+}
+.menu span {
+    font-family: Popins, sans-serif;
+}
+.menu-container{
+    width: 100%;
+    border-radius:  5px 0 0 5px;
+    transition: .5s ease;
+    z-index: 1;
+}
+
+.menu-container:hover{
+    transition: .5s ease;
+}
+.menu-home i, .menu-about i, .menu-skills i, .menu-works i, .menu-contact i{
+    transition: .5s ease;
+    border-radius:  5px 0 0 5px;
+    z-index: 1 !important;
+    background-color: #7099A0;
+    padding: 5px 5px 7px 10px;
+    position: relative;
+    border-radius: 5px;
+}
+.menu-home:hover i, .menu-about:hover i, .menu-skills:hover i, .menu-works:hover i, .menu-contact:hover i{
+    transform: rotate(360deg);
+    transition: .5s ease;
+    color: #2b3f4f;
+    background-color: #E5E7EB;
+}
+.menu-home .menu-home-icon{
+    width: 90px;
+} .menu-about .menu-about-icon{
+    width: 120px;
+} .menu-skills .menu-skills-icon{
+    width: 115px;
+} .menu-works .menu-works-icon{
+    width: 90px;
+} .menu-contact .menu-contact-icon{
+    width: 135px;
+} .socmed-menu .socmed-label{
+    width: 190px;
+}
+
+.menu-home .menu-home-icon, .menu-about .menu-about-icon, .menu-skills .menu-skills-icon, .menu-works .menu-works-icon, .menu-contact .menu-contact-icon{
+    transition: .5s ease;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    padding: 7px 20px 5px 30px;
+    background-color: #E5E7EB;
+    color: #FFFFFF;
+    border-radius: 5px;
+    z-index: 0;
+    left: 0;
+}
+
+.menu-home:hover .menu-home-icon, .menu-about:hover .menu-about-icon, .menu-skills:hover .menu-skills-icon, .menu-works:hover .menu-works-icon, .menu-contact:hover .menu-contact-icon{
+    transition: .5s ease;
+    opacity: 1;
+    color: #2b3f4f;
+    left: 20px;
+    visibility: visible;
+}
+
+.socmed-menu .socmed-icon{
+    transition: .5s ease;
+    border-radius:  5px 0 0 0px;
+    z-index: 2 !important;
+    background-color: #7099A0;
+    padding: 5px 5px 7px 10px;
+    position: relative;
+}
+
+.socmed-menu:hover .socmed-icon{
+    transform: rotate(360deg);
+    transition: .5s ease;
+    color: #2b3f4f;
+    background-color: #E5E7EB;
+}
+.socmed-menu .socmed-label{
+    transition: .5s ease;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    padding: 7px 20px 5px 30px;
+    background-color: #E5E7EB;
+    color: #FFFFFF;
+    border-radius: 5px 5px 0px 0px;
+    z-index: 1;
+    left: 0;
+}
+.socmed-menu:hover .socmed-label{
+    transition: .5s ease;
+    opacity: 1;
+    color: #2b3f4f;
+    left: 20px;
+    visibility: visible;
+}
+.socmed-menu .menu-social-media{
+    transition: .5s ease;
+    display: flex;
+    gap: 16px;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    position: absolute;
+    padding: 17px 20px 5px 50px;
+    background-color: #E5E7EB;
+    border-radius: 0 0 5px 5px;
+    z-index: 0;
+    bottom: 0;
+}
+.socmed-menu:hover .menu-social-media{
+    transition: .5s ease;
+    opacity: 1 !important;
+    left: 0px;
+    visibility: visible !important;
+    bottom: -35px;
+}
+.socmed-menu .menu-social-media i{
+    color:#355266;
+}
+@media (max-width: 1345px){
+    .menu ul {
+        flex-direction: row !important;
+    }
+    .menu-home i, .menu-about i, .menu-skills i, .menu-works i, .menu-contact i{
+        transition: .5s ease;
+        border-radius:  5px 0 0 5px;
+        z-index: 1 !important;
+        background-color: #7099A0;
+        padding: 9px 10px 9px 10px;
+        position: relative;
+        border-radius: 5px;
+    }
+    .menu-home .menu-home-icon, .menu-about .menu-about-icon, .menu-skills .menu-skills-icon, .menu-works .menu-works-icon, .menu-contact .menu-contact-icon{
+        padding: 7px 20px 5px 15px;
+        top: 0px;
+    }
+
+    .menu-home:hover .menu-home-icon{
+        left: 0px;
+        top: 48px;
+    }
+    .menu-about:hover .menu-about-icon, .menu-skills:hover .menu-skills-icon, .menu-works:hover .menu-works-icon, .menu-contact:hover .menu-contact-icon{
+        left: 0px;
+        top: 32px;
+    }
+    .menu-home .menu-home-icon{
+        width: 78px;
+    } .menu-about .menu-about-icon{
+        width: 104px;
+    } .menu-skills .menu-skills-icon{
+        width: 99px;
+    } .menu-works .menu-works-icon{
+        width: 81px;
+    } .menu-contact .menu-contact-icon{
+        width: 118px;
+    } .socmed-menu .socmed-label{
+        width: 190px;
+    }
+    .socmed-menu:hover .menu-social-media {
+        left: auto;
+    }
+    .socmed-menu .socmed-label{
+        left: auto!important;
+    }
+    .socmed-menu:hover .socmed-label {
+        left: auto !important;
+        padding: 7px 10px 5px 10px;
+        border-radius: 0 5px 0 0;
+        width: 171px;
+    }
+    .menu-contact:hover .menu-contact-icon {
+        left: -73px;
+}
+@media (max-width: 345px){
+    .socmed-menu{
+        display: none;
+    }
+}
+
 @media (max-width: 900px) {
     .skills-wp p {
         width: 33%;
