@@ -402,7 +402,9 @@ span.swiper-pagination-bullet {
 .contact-social-media i{
     color: #7099A0;
 }
-
+.contact-me-col h5 {
+    margin-bottom: 10px !important;
+}
 
 /* Menu */
 .anchors-menu li a i {
