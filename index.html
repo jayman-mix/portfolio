@@ -279,6 +279,20 @@
                         <a href="https://github.com/jayman-mix" target="_blank"><i class="fa-brands fa-github text-2xl"></i></a>
                         <a href="https://www.facebook.com/jayman.bernal" target="_blank"><i class="fa-brands fa-facebook text-2xl"></i></a>
                     </div>
+
+                    <form action="send_mail.php" method="POST">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="5" required></textarea><br>
+                
+                        <button type="submit">Send</button>
+                    </form>
+
                     <h5>Let's Connect and Build Something Great!</h5>
                     <p>I’m always open to new projects, collaborations, or just a friendly chat about web development. <br> Feel free to reach out with me on social media.</p>
                 </div>
