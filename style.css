@@ -491,7 +491,7 @@ span.swiper-pagination-bullet {
 
 .socmed-menu .socmed-icon{
     transition: .5s ease;
-    border-radius:  5px 0 0 0px;
+    border-radius:  5px;
     z-index: 2 !important;
     background-color: #7099A0;
     padding: 5px 5px 7px 10px;
@@ -504,25 +504,6 @@ span.swiper-pagination-bullet {
     color: #2b3f4f;
     background-color: #E5E7EB;
 }
-.socmed-menu .socmed-label{
-    transition: .5s ease;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    padding: 7px 20px 5px 30px;
-    background-color: #E5E7EB;
-    color: #FFFFFF;
-    border-radius: 5px 5px 0px 0px;
-    z-index: 1;
-    left: 0;
-}
-.socmed-menu:hover .socmed-label{
-    transition: .5s ease;
-    opacity: 1;
-    color: #2b3f4f;
-    left: 20px;
-    visibility: visible;
-}
 .socmed-menu .menu-social-media{
     transition: .5s ease;
     display: flex;
@@ -530,26 +511,23 @@ span.swiper-pagination-bullet {
     opacity: 0 !important;
     visibility: hidden !important;
     position: absolute;
-    padding: 17px 20px 5px 50px;
+    padding: 7px 20px 5px 30px;
     background-color: #E5E7EB;
-    border-radius: 0 0 5px 5px;
+    border-radius: 5px;
     z-index: 0;
-    bottom: 0;
+    top: 0;
 }
 .socmed-menu:hover .menu-social-media{
     transition: .5s ease;
     opacity: 1 !important;
-    left: 0px;
+    left: 20px;
     visibility: visible !important;
-    bottom: -35px;
 }
 .socmed-menu .menu-social-media i{
     color:#355266;
+    font-size: 18px;
 }
 @media (max-width: 1345px){
-    .menu{
-        transform: translateY(20px) !important;
-    }
     .menu ul {
         flex-direction: row !important;
     }
@@ -585,20 +563,9 @@ span.swiper-pagination-bullet {
         width: 81px;
     } .menu-contact .menu-contact-icon{
         width: 118px;
-    } .socmed-menu .socmed-label{
-        width: 190px;
-    }
+    } 
     .socmed-menu:hover .menu-social-media {
         left: auto;
-    }
-    .socmed-menu .socmed-label{
-        left: auto!important;
-    }
-    .socmed-menu:hover .socmed-label {
-        left: auto !important;
-        padding: 7px 10px 5px 10px;
-        border-radius: 0 5px 0 0;
-        width: 171px;
     }
     .menu-contact:hover .menu-contact-icon {
         left: -73px;
