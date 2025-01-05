@@ -529,13 +529,13 @@ span.swiper-pagination-bullet {
 }
 
 /* Form */
-.my-form label {
+label {
     font-family: Poppins !important;
     font-size: 16px !important;
     color: #355266 !important;
 }
 
-.my-form input {
+input {
     width: 100% !important;
     height: 36px !important;
     margin: 5px 0 15px 0 !important;
@@ -545,7 +545,7 @@ span.swiper-pagination-bullet {
     padding: 10px !important;
 }
 
-.my-form textarea {
+textarea {
     width: 100% !important;
     height: 100px !important;
     margin: 5px 0 15px 0 !important;
