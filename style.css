@@ -511,7 +511,7 @@ span.swiper-pagination-bullet {
     opacity: 0 !important;
     visibility: hidden !important;
     position: absolute;
-    padding: 3px 20px 1px 30px;
+    padding: 7px 20px 5px 30px;
     background-color: #E5E7EB;
     border-radius: 5px;
     z-index: 0;
@@ -530,6 +530,7 @@ span.swiper-pagination-bullet {
 @media (max-width: 1345px){
     .menu ul {
         flex-direction: row !important;
+        gap: 10px;
     }
     .menu-home i, .menu-about i, .menu-skills i, .menu-works i, .menu-contact i{
         transition: .5s ease;
@@ -569,6 +570,9 @@ span.swiper-pagination-bullet {
     }
     .menu-contact:hover .menu-contact-icon {
         left: -73px;
+    }
+    .menu{
+        transform: translateY(20px);
     }
 }
 @media (max-width: 345px){
