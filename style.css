@@ -511,7 +511,7 @@ span.swiper-pagination-bullet {
     opacity: 0 !important;
     visibility: hidden !important;
     position: absolute;
-    padding: 7px 20px 5px 30px;
+    padding: 3px 20px 1px 30px;
     background-color: #E5E7EB;
     border-radius: 5px;
     z-index: 0;
